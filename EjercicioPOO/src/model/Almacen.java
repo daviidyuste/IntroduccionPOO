@@ -1,9 +1,15 @@
 package model;
 
-import model.Libros;
+import model.Libro;
 
 public class Almacen {
+    public Libro[] arrayAlmacen;  
 
-    Libros[] nlibros = new Libros[]
+    public void setTamaño(int tam) {
+        arrayAlmacen = new Libro[tam];  
+    }
 
+    public int getTamaño() {
+        return arrayAlmacen.length;
+    }
 }
